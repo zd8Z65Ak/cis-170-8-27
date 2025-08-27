@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Slope Formula App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Slope Formula App</h1>
+    <p id="equation" class="equation">&nbsp;</p>
+    <p>Check if the coordinate <strong>(<span id="coordinate"></span>)</strong> is on the line.</p>
+
+    <details id="answerExpander" class="expander">
+      <summary id="summaryText">Select your answer</summary>
+      <div class="expander-body">
+        <button type="button" class="answer-btn" data-value="yes">Yes</button>
+        <button type="button" class="answer-btn" data-value="no">No</button>
+      </div>
+    </details>
+
+    <p id="result" class="result">&nbsp;</p>
+
+    <div class="graph-wrap">
+      <canvas id="graph" width="480" height="480" aria-label="Graph showing line and point"></canvas>
+      <div class="legend">
+        <div>Slope (m): <span id="slopeValue"></span></div>
+        <div>Intercept (b): <span id="interceptValue"></span></div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="newBtn" type="button">New Problem</button>
+    </div>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
