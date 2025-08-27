@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function generateProblem() {
     // pick slope and intercept
-    m = getRandomInt(-5, 5);
-    b = getRandomInt(-10, 10);
+  m = getRandomInt(-5, 5);
+  b = getRandomInt(-5, 5);
 
     // coordinate ranges
     const MIN_COORD = -10;
